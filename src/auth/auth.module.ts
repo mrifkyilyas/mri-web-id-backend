@@ -1,9 +1,10 @@
-import { Module } from "@nestjs/common";
+import { Module, Global } from "@nestjs/common";
 import { AuthService } from "./auth.service";
 import { MongooseModule } from '@nestjs/mongoose';
 import { JwtModule } from '@nestjs/jwt';
 import { AuthSchema } from "./schemas/auth.schema";
 
+@Global()
 @Module({
   imports: [
     MongooseModule.forFeature([{ name: "Auth", schema: AuthSchema }]),
