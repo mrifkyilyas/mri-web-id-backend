@@ -19,7 +19,7 @@ export class AuthService {
             morph: payload.sub,
             morphModel: 'Admin' 
         });
-        const res = await auth.save;
+        const res = await auth.save();
 
         return auth;
     }
