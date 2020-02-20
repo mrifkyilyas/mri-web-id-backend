@@ -19,7 +19,8 @@ import { AuthModule } from './auth/auth.module';
       }
     ),
     AdminsModule,
-    AuthModule
+    AuthModule,
+    ConfigModule,
   ],
   controllers: [AppController],
   providers: [AppService]
